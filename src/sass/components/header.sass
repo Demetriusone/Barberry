@@ -1,0 +1,102 @@
+.header
+    top: 0
+    position: fixed
+    left: 0
+    width: 100%
+    background: #fff
+    &__content
+        padding: 26px 0px
+        position: relative
+    &__container
+        display: flex
+        align-items: center
+    &__lang
+        position: relative
+        margin: 0 15px
+        z-index: 2
+        width: 80px
+        text-transform: uppercase
+        ul
+            position: relative
+            &:hover ul
+                opacity: 1
+                pointer-events: auto
+                transform: scaleY(1)
+            li
+                a
+                    display: flex
+                    align-items: center 
+                    padding: 0 15px 
+                    font-size: 15px
+                    letter-spacing: 1.5px
+                    transition: all 0.25s ease-out
+                .icon-arr
+                    margin-left: 4px
+            ul
+                position: absolute
+                top: calc(100% - 33px)
+                left: 0
+                opacity: 0
+                pointer-events: none
+                transform: scaleY(0)
+                transform-origin: 30% 0
+                padding: 33px 0 10px 
+                width: 100%
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11)
+                cursor: pointer
+                transition: .3s ease 
+    &__logo
+        max-width: 20%
+        flex: 0  0 20%
+        display: flex
+        justify-content: center 
+        align-items: center
+        padding: 0 15px
+    &__options
+        display: flex
+        max-width: 40%
+        flex: 0 0 40%
+        justify-content: flex-end
+        align-items: center 
+    &__search
+        padding: 0 15px
+        a
+            display: flex
+        svg
+            fill: #000
+            height: 19px
+    &__like
+        display: flex
+        padding: 0 15px
+        align-items: center 
+        a
+            display: flex
+    &__cart
+        position: relative
+        padding: 0 15px
+        &-count
+            display: flex
+            justify-content: center 
+            align-items: center
+            color: #fff
+            text-align: center
+            font-size: 12px
+            z-index: 1
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            position: absolute
+            right: -4px
+            top: -4px
+            background: #000
+       
+    
+    
+
+
+            
+
+        
+                
+
+    
