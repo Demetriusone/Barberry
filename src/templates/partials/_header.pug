@@ -3,18 +3,69 @@
     +e.content
         +e.container.container
             +b.NAV.nav._header
-                -
-                    navList = [
-                        ['Home','home'],
-                        ['Features','features'],
-                        ['The shop','shop'],
-                        ['The blog','blog'],
-                        
-                    ]
+
+                   
                 +e.UL.list
-                    for navLink in navList
-                        +e.LI.list-item.has-dropdown: +e.A.list-link(href=`#${navLink[1]}`)= navLink[0]
+                    
+                        +e.LI.list-item.has-dropdown
+                            +e.A.list-link(href='#') Home
                                 +i('arr')
+                            +e.dropdown
+                                +e.dropdown-inner
+                                    +e.UL.dropdown-list
+                                        +e.LI.dropdown-wrapper
+                                            +e.dropdown-row
+                                                +e.dropdown-col
+                                                    +e.UL.dropdown-sub
+                                                       +e.LI.dropdown-item
+                                                            +e.A.dropdown-title(href='#') Layout
+                                                            +e.UL.dropdown-last
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                +e.dropdown-col
+                                                    +e.UL.dropdown-sub
+                                                       +e.LI.dropdown-item
+                                                            +e.A.dropdown-title(href='#') Layout
+                                                            +e.UL.dropdown-last
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                +e.dropdown-col
+                                                    +e.UL.dropdown-sub
+                                                       +e.LI.dropdown-item
+                                                            +e.A.dropdown-title(href='#') Layout
+                                                            +e.UL.dropdown-last
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                                li
+                                                                    a(href='#') Design
+                                                           
+                                                            
+
+                                                
+
+
             +e.logo
                 IMG(src='img/logo.png' alt='image')
             +e.options
@@ -37,7 +88,9 @@
                                 a(href='#') UAH
                 +e.cart
                     +e.A.cart-link(href="#") Cart
-                        +e.SPAN.cart-count 0
+                        +e.SPAN.cart-count 0 
+                
+                     
 
 
                     

@@ -1,6 +1,7 @@
 .nav
     max-width: 40%
     flex: 0 0 40%
+    position: relative
     &__list
         display: flex
         align-items: center 
@@ -8,12 +9,52 @@
             padding-right: 20px
             &.has-dropdown
                 position: relative
+            &.has-dropdown 
+                &:hover .nav__dropdown
+                    opacity: 1
+                    visibility: visible
+                    pointer-events: inherit
+                    transition: 0.75s transform cubic-bezier(0.19, 1, 0.22, 1)
+                    transform: none
+                
         &-link
             display: flex
             align-items: center 
             svg
                 height: 10px
                 margin-left: 3px
+    &__dropdown
+        text-align: left
+        width: 700px
+        position: absolute
+        top: 100%
+        min-width: 300px
+        background-color: transparent
+        z-index: 35
+        padding: 1.75em 0
+        opacity: 0
+        visibility: hidden
+        height: auto
+        transform: scaleY(0)
+        transform-origin: top
+        transition: 0.2s transform cubic-bezier(0.165, 0.84, 0.44, 1)
+        left: 0
+        &-inner
+            padding: 3rem 4rem   
+        &-row
+            display: flex
+        &-col
+            flex: 0 0 33.33333%
+            width: 33.33333%
+        &-title
+            font-size: 20px
+            font-weight: bold
+        &-last
+            li
+                a
+                    padding: 5px 0
+                    display: block
+            
+      
         
-    
         
